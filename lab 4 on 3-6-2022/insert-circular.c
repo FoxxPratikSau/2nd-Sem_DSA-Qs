@@ -15,6 +15,8 @@ node* insertbeg(node*head,node*temp){
     temp->next=newnode;
     head=newnode;
     return head;
+
+    
 }
 /*****INSERTING A NODE AT END******/
 void insertend(node*head,node*temp){
