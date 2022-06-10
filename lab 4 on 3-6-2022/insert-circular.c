@@ -1,4 +1,9 @@
-+
+#include<stdio.h>
+#include<stdlib.h>
+typedef struct node{
+    int data;
+    struct node*next;
+}node;
 /*****INSERTING A NODE AT BEGINING******/
 node* insertbeg(node*head,node*temp){
     node*newnode;
@@ -71,14 +76,14 @@ int main(){
              
         }
         count++;
-        printf("Enter data ");
+        printf("Enter data");
         scanf("%d",&temp->data);
-        printf("Press 1 to continue and 0 to stop ");
+        printf("Press 1 to continue and 0 to stop");
         scanf("%d",&n);
 
     }
     int p;
-    printf("Enter the position ");
+    printf("Enter the position");
     scanf("%d",&p);   
     if(p<1&&p>count)  {printf("Enter the valid position");
     printlist(head);}
@@ -92,9 +97,9 @@ int main(){
         insertend(head,temp);
         printf("Linked list after inserting at end position\n");
         printlist(head);
-    }
+   }
    else{
-        insertany(head,p);
+    insertany(head,p);
     }
     printf("Linked list after inserting at %d position\n",p);
     printlist(head);
